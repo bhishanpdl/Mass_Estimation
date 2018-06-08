@@ -1,0 +1,6 @@
+outputs/convolvedd/convolved_band_1.fits
+outputs/convolvedd/convolved_band_2.fits
+outputs/convolvedd/convolved_band_0.fits
+outputs/convolvedd/convolved_band_3.fits
+outputs/convolvedd/convolved_band_4.fits
+outputs/convolvedd/convolved_band_5.fits
