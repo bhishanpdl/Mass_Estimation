@@ -25,7 +25,7 @@ python aa_run_dmstack.py -z 0.7 -f lsst_mono > /dev/null 2>&1
 python aa_run_dmstack.py -z 0.7 -f lsst_mono90 > /dev/null 2>&1
 ```
 
-# The parameters in source catalog
+# The 77 parameters in source catalog
 ```   
 id (0)                                       coord_ra (1)
 coord_dec (2)                                parent (3)                                   
