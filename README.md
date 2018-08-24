@@ -27,26 +27,32 @@ python aa_run_dmstack.py -z 0.7 -f lsst_mono90 > /dev/null 2>&1
 
 # The parameters in source catalog
 ```   
-id (0)                                       coord_ra (1)                                 coord_dec (2)
-parent (3)                                   deblend_nChild  (4)                          deblend_psfCenter_x (5)
-deblend_psfCenter_y (6)                      deblend_psfFlux (7)                          base_GaussianCentroid_x (8)
-base_GaussianCentroid_y (9)                  base_NaiveCentroid_x  (10)                   base_NaiveCentroid_y (11)
+id (0)                                       coord_ra (1)
+coord_dec (2)                                parent (3)                                   
+deblend_nChild  (4)                          deblend_psfCenter_x (5)
+deblend_psfCenter_y (6)                      deblend_psfFlux (7)                          
+base_GaussianCentroid_x (8)                  base_GaussianCentroid_y (9)                  
+base_NaiveCentroid_x  (10)                   base_NaiveCentroid_y (11)
 
 
-base_SdssCentroid_x (12)                     base_SdssCentroid_y (13)                     base_SdssCentroid_xSigma (14)
-base_SdssCentroid_ySigma (15)                base_SdssShape_xx (16)                       base_SdssShape_yy (17)
-base_SdssShape_xy  (18)                      base_SdssShape_xxSigma (19)                  base_SdssShape_yySigma (20)
-base_SdssShape_xySigma (21)                  base_SdssShape_x (22)                        base_SdssShape_y (23)
-base_SdssShape_flux  (24)                    base_SdssShape_fluxSigma (25)                base_SdssShape_psf_xx (26)
-base_SdssShape_psf_yy (27)                   base_SdssShape_psf_xy (28)                   base_SdssShape_flux_xx_Cov (29)
-base_SdssShape_flux_yy_Cov (30)              base_SdssShape_flux_xy_Cov  (31)             ext_shapeHSM_HsmPsfMoments_x (32)
+base_SdssCentroid_x (12)                     base_SdssCentroid_y (13)
+base_SdssCentroid_xSigma (14)                base_SdssCentroid_ySigma (15)
+base_SdssShape_xx (16)                       base_SdssShape_yy (17)
+base_SdssShape_xy  (18)                      base_SdssShape_xxSigma (19)
+base_SdssShape_yySigma (20)                  base_SdssShape_xySigma (21)
+base_SdssShape_x (22)                        base_SdssShape_y (23)
+base_SdssShape_flux  (24)                    base_SdssShape_fluxSigma (25)
+base_SdssShape_psf_xx (26)                   base_SdssShape_psf_yy (27)
+base_SdssShape_psf_xy (28)                   base_SdssShape_flux_xx_Cov (29)
+base_SdssShape_flux_yy_Cov (30)              base_SdssShape_flux_xy_Cov  (31)             
 
-
-ext_shapeHSM_HsmPsfMoments_y(33)           ext_shapeHSM_HsmPsfMoments_xx (34)          ext_shapeHSM_HsmPsfMoments_yy (35)
-ext_shapeHSM_HsmPsfMoments_xy(36)          ext_shapeHSM_HsmShapeRegauss_e1 (37)        ext_shapeHSM_HsmShapeRegauss_e2 (38)
-ext_shapeHSM_HsmShapeRegauss_sigma(39)     ext_shapeHSM_HsmShapeRegauss_resolution(40) ext_shapeHSM_HsmSourceMoments_x (41)
-ext_shapeHSM_HsmSourceMoments_y(42)        ext_shapeHSM_HsmSourceMoments_xx(43)        ext_shapeHSM_HsmSourceMoments_yy (44)
-ext_shapeHSM_HsmSourceMoments_xy (45)          
+ext_shapeHSM_HsmPsfMoments_x (32)            ext_shapeHSM_HsmPsfMoments_y(33)           
+ext_shapeHSM_HsmPsfMoments_xx (34)           ext_shapeHSM_HsmPsfMoments_yy (35)
+ext_shapeHSM_HsmPsfMoments_xy(36)            ext_shapeHSM_HsmShapeRegauss_e1 (37)        
+ext_shapeHSM_HsmShapeRegauss_e2 (38)         ext_shapeHSM_HsmShapeRegauss_sigma(39)     
+ext_shapeHSM_HsmShapeRegauss_resolution(40)  ext_shapeHSM_HsmSourceMoments_x (41)
+ext_shapeHSM_HsmSourceMoments_y(42)          ext_shapeHSM_HsmSourceMoments_xx(43)        
+ext_shapeHSM_HsmSourceMoments_yy (44)        ext_shapeHSM_HsmSourceMoments_xy (45)          
 
 
 base_CircularApertureFlux_3_0_flux (46)      base_CircularApertureFlux_3_0_fluxSigma (47) 
