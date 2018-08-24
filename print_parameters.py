@@ -1,0 +1,12 @@
+from tabulate import tabulate
+
+params = "# id  coord_ra  coord_dec  parent  deblend_nChild  deblend_psfCenter_x  deblend_psfCenter_y  deblend_psfFlux  base_GaussianCentroid_x  base_GaussianCentroid_y  base_NaiveCentroid_x  base_NaiveCentroid_y  base_SdssCentroid_x  base_SdssCentroid_y  base_SdssCentroid_xSigma  base_SdssCentroid_ySigma  base_SdssShape_xx  base_SdssShape_yy  base_SdssShape_xy  base_SdssShape_xxSigma  base_SdssShape_yySigma  base_SdssShape_xySigma  base_SdssShape_x  base_SdssShape_y  base_SdssShape_flux  base_SdssShape_fluxSigma  base_SdssShape_psf_xx  base_SdssShape_psf_yy  base_SdssShape_psf_xy  base_SdssShape_flux_xx_Cov  base_SdssShape_flux_yy_Cov  base_SdssShape_flux_xy_Cov  ext_shapeHSM_HsmPsfMoments_x  ext_shapeHSM_HsmPsfMoments_y  ext_shapeHSM_HsmPsfMoments_xx  ext_shapeHSM_HsmPsfMoments_yy  ext_shapeHSM_HsmPsfMoments_xy  ext_shapeHSM_HsmShapeRegauss_e1  ext_shapeHSM_HsmShapeRegauss_e2  ext_shapeHSM_HsmShapeRegauss_sigma  ext_shapeHSM_HsmShapeRegauss_resolution  ext_shapeHSM_HsmSourceMoments_x  ext_shapeHSM_HsmSourceMoments_y  ext_shapeHSM_HsmSourceMoments_xx  ext_shapeHSM_HsmSourceMoments_yy  ext_shapeHSM_HsmSourceMoments_xy  base_CircularApertureFlux_3_0_flux  base_CircularApertureFlux_3_0_fluxSigma  base_CircularApertureFlux_4_5_flux  base_CircularApertureFlux_4_5_fluxSigma  base_CircularApertureFlux_6_0_flux  base_CircularApertureFlux_6_0_fluxSigma  base_CircularApertureFlux_9_0_flux  base_CircularApertureFlux_9_0_fluxSigma  base_CircularApertureFlux_12_0_flux  base_CircularApertureFlux_12_0_fluxSigma  base_CircularApertureFlux_17_0_flux  base_CircularApertureFlux_17_0_fluxSigma  base_CircularApertureFlux_25_0_flux  base_CircularApertureFlux_25_0_fluxSigma  base_CircularApertureFlux_35_0_flux  base_CircularApertureFlux_35_0_fluxSigma  base_CircularApertureFlux_50_0_flux  base_CircularApertureFlux_50_0_fluxSigma  base_CircularApertureFlux_70_0_flux  base_CircularApertureFlux_70_0_fluxSigma  base_GaussianFlux_flux  base_GaussianFlux_fluxSigma  base_PsfFlux_flux  base_PsfFlux_fluxSigma  base_Variance_value  base_PsfFlux_apCorr  base_PsfFlux_apCorrSigma  base_GaussianFlux_apCorr  base_GaussianFlux_apCorrSigma  base_ClassificationExtendedness_value  footprint"
+params = params.lstrip('#')
+lst = params.split()
+odd = lst[::2]
+even = lst[1::2] + [''] # odd has len 39, even has len 38
+
+# list of pair of tuples
+lst = [(odd[i] + ' (' + str(i*2) + ')',even[i] + ' (' + str(i*2+1) + ')') for i in range(len(odd))]
+
+print(tabulate(lst))
